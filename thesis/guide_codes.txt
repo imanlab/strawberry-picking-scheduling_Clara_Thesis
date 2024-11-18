@@ -1,0 +1,43 @@
+Annotations files modifications – general: 
+
+extraction_json.py (da anydesk): 
+
+to extract the single annotations and the single pics of each strawberry
+Path: 
+
+min_traj_kmeans_all.py: 10 best path kmeans + brut force
+
+a_star_work_all.py: 10 best path generation with A*
+
+
+Annotations files creation:
+
+adding_z_coordinate.py: add the z coordinates to the json file. NB: the json file is the one with every strawberry
+
+final_annotation_scheduling_allrows.py: take the csv with both the kendall tau and the distance, compute the final cost function and return the 10 best ordered
+
+final_annotation_scheduling.py: take the csv with both the kendal tau and the distance and keep the best one
+
+1)npy_seg_extraction.py: to extract the single .npy for each strawberry
+
+json_unification.py: Add Scheduling Order annotations to the json file (the one with all strawberry)
+
+4) unification_csv.py: unify the csv containing the single coordinate per strawberry and create the files with the coordinates per image 
+
+traj_and_kendal.py: Compute Hardness of Picking cost function and add it to the csv files with the best ten path
+
+adding_centers.py: Add xy centers coordinates to the json file with all the strawberries
+
+associate_coordinates.py (da anydesk): Add coordinates centers to the json files containing information about singles strawberries (to check)
+
+2) xy_center_extraction.py: produce the folder with a  xy center per strawberry in .csv format
+
+3) z_extraction_npy_seg.py produce a folder with the z coordinates, for each strawberry
+
+4) adding_z_to_xy_centers.py add_z to xy centers folder
+
+hop_with_coordinate.py addd hop to csv with coordinates
+
+alpha_tuning.py find the alpha for which the length is the smaller
+alpha_tuning_all.py find the alpha for which the mre wrt to the gt is the smaller
+
